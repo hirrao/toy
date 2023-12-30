@@ -1,8 +1,20 @@
 plugins {
+    java
+    application
     id("org.openjfx.javafxplugin") version "0.1.0"
 }
 
+group = "com.hirrao"
 version = "1.0"
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
