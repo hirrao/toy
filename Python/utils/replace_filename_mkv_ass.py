@@ -8,7 +8,7 @@ import logging
 
 # 将字幕文件重命名为与视频文件相同名称
 def replace_filename_mkv_ass(paths):
-    mkv_files = glob.glob('*.mkv')
+    mkv_files = sorted(glob.glob('*.mkv'))
     logging.info(f"mkv文件列表 {str(mkv_files)}")
     ass_files = sorted(glob.glob('*.ass'))
     logging.info(f"字幕文件列表 {str(ass_files)}")
@@ -32,8 +32,8 @@ def replace_filename_mkv_ass(paths):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    paths = os.getcwd()
-    logging.info(f"当前路径为 {paths}")
-    replace_filename_mkv_ass(paths)
+    path = os.getcwd()
+    logging.info(f"当前路径为 {path}")
+    replace_filename_mkv_ass(path)
     logging.info("重命名完成，按任意键退出")
     input()

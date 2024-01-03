@@ -22,4 +22,4 @@ if __name__ == '__main__':
     logging.info(f"删除的字符串为 {text}")
     delete_str_in_filename(path, text)
     logging.info("修改完成，按任意键退出")
-    input("")
+    input()
