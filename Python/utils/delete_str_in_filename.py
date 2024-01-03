@@ -10,6 +10,8 @@ def delete_str_in_filename(paths, texts=""):
     for filename in os.listdir(paths):
         if texts in filename:
             newname = filename.replace(texts, '')
+            if newname == filename:
+                return
             os.rename(os.path.join(paths, filename), os.path.join(paths, newname))
             logging.info(f"{filename}修改为{newname}")
 
