@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="com.hirrao.game.control.MainSceneController"
+      maxHeight="600" maxWidth="400"
+      prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: red">
+
+</Pane>
