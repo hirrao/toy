@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "gcc-debug",
+            "command": "/usr/bin/gcc",
+            "dependsOn":"mkdir-out",
+            "args": [
+                "-g",
+                "${file}",
+                "-Og",
+                "-o",
+                "${fileDirname}/out/${fileBasenameNoExtension}",
+                "-lstdc++"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "mkdir-out",
+            "command":"/usr/bin/bash",
+            "args": [
+                "mkdir",
+                "-p",
+                "out"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            }
+        }
+    ]
+}
