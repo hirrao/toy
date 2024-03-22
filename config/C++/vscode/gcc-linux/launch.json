@@ -9,7 +9,7 @@
             "name": "GCC",
             "type":"cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/out/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "cwd": "${fileDirname}",
             "args": [
                 

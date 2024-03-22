@@ -7,13 +7,12 @@
             "type": "cppbuild",
             "label": "gcc-debug",
             "command": "/usr/bin/gcc",
-            "dependsOn":"mkdir-out",
             "args": [
                 "-g",
                 "${file}",
                 "-Og",
                 "-o",
-                "${fileDirname}/out/${fileBasenameNoExtension}",
+                "${fileDirname}/${fileBasenameNoExtension}",
                 "-lstdc++"
             ],
             "options": {
@@ -22,19 +21,6 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "mkdir-out",
-            "command":"/usr/bin/bash",
-            "args": [
-                "mkdir",
-                "-p",
-                "out"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
             }
         }
     ]
