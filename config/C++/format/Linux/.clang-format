@@ -82,7 +82,6 @@ SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword : false
 SpaceAroundPointerQualifiers: Default
 SpaceBeforeAssignmentOperators: true
-SpaceBeforeAssignmentOperators: false
 SpaceBeforeCpp11BracedList: true
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
