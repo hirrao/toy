@@ -69,7 +69,7 @@ PPIndentWidth: -1
 PackConstructorInitializers: CurrentLine
 PointerAlignment: Right
 QualifierAlignment: Custom
-QualifierOrder: ["inline", "static" , "type", "const"]
+QualifierOrder: ["inline", "static", "const", "type"]
 RawStringFormats: []
 ReferenceAlignment: Right
 ReflowComments: true
